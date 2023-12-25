@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Details</title>
+    <style>
+        .book-container {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            margin-bottom: 40px;
+        }
+
+        .book-cover {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .book-details {
+            flex: 1;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .book-author {
+            margin-bottom: 5px;
+        }
+
+        .book-details p {
+            margin: 0;
+        }
+
+        .download-link {
+            display: block;
+            margin-top: 10px;
+        }
+       .navbar {
+            overflow: hidden;
+            background-color:transparent;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color:transparent;
+            color: black;
+        }
+         .top-rated {
+            position: fixed;
+            top: 40px;
+            right: 20px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .top-rated img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        star-rating {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #ffd700; /* Gold color for stars */
+        }
+
+        .star-rating::before {
+            content: '★';
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Adjust the rating color based on the rating value */
+        .star-rating[data-rating="1"]::before { color: #ffd700; }
+        .star-rating[data-rating="2"]::before { color: #ffd700; }
+        .star-rating[data-rating="3"]::before { color: #ffd700; }
+        .star-rating[data-rating="4"]::before { color: #ffd700; }
+        .star-rating[data-rating="5"]::before { color: #ffd700; }
+
+        /* Additional styles for clarity */
+        .rating-container {
+            margin-top: 10px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#home">Home Page</a>
+        <a href="#admin">Admin Page</a>
+        <a href="#login">Login Page</a>
+    </div>
+
+    <h1>Book Details</h1>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\Python.jpg" alt="Book 1 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Python Programming</h2>
+            <p class="book-author">Author: John Doe</p>
+            <p>Publication Date: January 1, 2023</p>
+            <p>Rating: 5/5</p>
+            <a href="book1.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\FET.jpg" alt="Book 2 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Fundamentals of Electronics</h2>
+            <p class="book-author">Author: Jane Smith</p>
+            <p>Publication Date: February 1, 2023</p>
+            <p>Rating: 3/5</p>
+            <a href="book2.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\clean code.jpg" alt="Book 3 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Clean Code: A Handbook of Agile Software Craftsmanship</h2>
+            <p class="book-author">Author: Robert C. Martin</p>
+            <p>Publication Date: August 11, 2008</p>
+            <p>Rating:3/5</p>
+            <a href="book3.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\design pattern.jpg" alt="Book 4 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</h2>
+            <p class="book-author">Author: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p>
+            <p>Publication Date: November 10, 1994</p>
+            <p>Rating:3/5</p>
+            <a href="book4.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\code complete.jpg" alt="Book 5 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Code Complete: A Practical Handbook of Software Construction</h2>
+            <p class="book-author">Author: Steve McConnell</p>
+            <p>Publication Date: June 8, 2004</p>
+            <p>Rating: 3/5</p>
+            <a href="book5.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\pragematic programmer.jpg" alt="Book 6 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">The Pragmatic Programmer: Your Journey to Mastery</h2>
+            <p class="book-author">Author: Andrew Hunt, David Thomas</p>
+            <p>Publication Date: October 30, 1999</p>
+            <p>Rating: 3/5</p>
+            <a href="book6.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\introduction to.jpg" alt="Book 7 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">Introduction to the Theory of Computation</h2>
+            <p class="book-author">Author: Michael Sipser</p>
+            <p>Publication Date: February 15, 2012</p>
+            <p>Rating: 3/5</p>
+            <a href="book7.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="book-container">
+        <img src="c:\Users\Ephrata\Documents\IP e lib project\the mythical.jpg" alt="Book 8 Cover" class="book-cover">
+        <div class="book-details">
+            <h2 class="book-title">The Mythical Man-Month: Essays on Software Engineering</h2>
+            <p class="book-author">Author: Frederick P. Brooks Jr.</p>
+            <p>Publication Date: August 12, 1995</p>
+            <p>Rating:5/5</p>
+            <a href="book8.pdf" download class="download-link">Download</a>
+        </div>
+    </div>
+
+    <div class="top-rated">
+        <h2>Top Rated Books for the Week</h2>
+        <div class="book-details">
+            <img src="c:\Users\Ephrata\Documents\IP e lib project\the mythical.jpg" alt="Top Rated Book 1">
+            <h3 class="book-title">The Mythical Man-Month: Essays on Software Engineering</h3>
+            <p class="book-author">Author: Frederick P. Brooks Jr.</p>
+            <p>Publication Date: August 12, 1995</p>
+            <p>Rating: 5/5</p>
+        </div>
+        <div class="book-details">
+            <img src="c:\Users\Ephrata\Documents\IP e lib project\Python.jpg" alt="Top Rated Book 2">
+            <h3 class="book-title">Python Programming</h3>
+            <p class="book-author">Author: John Doe</p>
+            <p>Publication Date: January 1, 2023</p>
+            <p>Rating: 5/5</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
