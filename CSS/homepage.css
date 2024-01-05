@@ -1,0 +1,265 @@
+/* html blank sheet  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    width: auto;
+}
+/* Google Icons */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+/* The heading  */
+
+.logo img {
+
+    width: 125px;
+    height: 125px;
+}
+
+/* .logo-bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15%;
+} */
+
+.navg ul {
+    padding: 3px;
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+
+.navg ul li {
+    padding-top: 5px;
+}
+
+.navg ul :last-child {
+    padding-top: 2px;
+}
+
+.navg button {
+    font-size: 0.9em;
+    padding: 2px;
+    /* padding-top: 9px;
+    padding-bottom: 9px;
+    background: #A08B00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex */
+}
+
+.navg a {
+    text-decoration: none;
+}
+
+.navg {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+nav {
+    padding: 30px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the search section  */
+
+.search-bar-container {
+
+    /* max-width: 500px; */
+    padding: 300px 0 100px 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    /* padding-bottom: 100px; */
+    width: 100%;
+    height: 60px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px) saturate(180px);
+
+}
+
+.search-bar input {
+    background: transparent;
+    border: 0;
+    flex: 1;
+    outline: none;
+    padding: 24px 30px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+::placeholder {
+    color: #001459;
+}
+
+.search-bar button {
+    padding: 5px;
+    border: 0;
+    outline: none;
+    border-radius: 60% 60% 60% 60%;
+    height: auto;
+    background: #a08b00;
+}
+
+.search-bar button img {
+    padding: 4px 0 0 2px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* the books list section  */
+.books {
+    display: flex;
+    justify-content: center;
+}
+
+.books-container {
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.books-shelf {
+    border: 0;
+    outline: none;
+    flex-grow: 0.2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.books-shelf img {
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+}
+
+/* footer  */
+
+/* footer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.56) 30%);
+} */
+
+.footer-upper-container {
+    padding: 300px 300px 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+}
+
+.upper-links a {
+    padding: 10px 40px 0 0;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    padding: 0 300px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.termcondition ul a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.termcondition ul {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    list-style: none;
+}
+
+@media (max-width: 500px){
+    /* nav section  */
+    .navg ul {
+        padding: 3px;
+        list-style: none;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 400px;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-size: 0.9em;
+    }
+    
+    .navg ul li {
+        padding-top: 5px;
+    }
+    
+    .navg ul :last-child {
+        padding-top: 2px;
+    }
+    
+    .navg button {
+        font-size: 0.9em;
+        padding: 2px;
+    }
+    
+    .navg a {
+        text-decoration: none;
+    }
+    
+    .navg {
+        display: flex;
+        flex-grow: 1;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+    
+    nav {
+        padding: 30px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
