@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Library Discussion</title>
-    <link rel="stylesheet" href="/Internet-programming-I/CSS/discussion.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/discussion.css">
 </head>
+
 <body>
     <header>
-        <img src="AASTU Logo 2.jpg" width="120" height="110">
-        <nav>
-            <a href="homepage.html">Home</a>
-            <a href="LoginPage.html">Login</a>
-            <a href="AboutAs.html">About Us</a>
-        </nav>
+        <div class="logo">
+            <img src="/Images/AASTU_Logo_2-removebg.png" width="120" height="110">
+        </div>
+        <div class="nav-links">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <a href="LoginPage.html" class="btn btn-m btn-outline-log-out">Logout</a>
+            </nav>
+        </div>
     </header>
-
+    <div class="icons">
+        <div class="menu">
+            <input type="checkbox" id="menu" class="hidden-checkbox">
+            <label for="menu" class="menu-label">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </label>
+        </div>
+        <div class="search">
+            <input type="checkbox" id="search" class="hidden-checkbox">
+            <label for="search" class="search-label">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </label>
+        </div>
+    </div>
     <main>
-        <div class="engineering-list">
+        <div class="Fields-list">
             <h2>Engineering</h2>
             <ul>
                 <li>Architecture</li>
@@ -28,9 +57,9 @@
                 <li>Environmental Engineering</li>
                 <li>Mechanical Engineering</li>
                 <li>Mining Engineering</li>
-                <li class="active">Software Engineering</li>
+                <li class="selected">Software Engineering</li>
             </ul>
-            <h2>Applied</h2>
+            <h2>Applied Science</h2>
             <ul>
                 <li>Biotechnology</li>
                 <li>Food Science and Applied Nutrition</li>
@@ -44,7 +73,7 @@
                 <h2 class="comment-author">Mikiyas Alemayehu</h2>
                 <p class="comment-date">January 1, 2023</p>
                 <p class="comment-text">
-                    I recently read "Clean Code" by Robert C. Martin. It's a must-read for anyone in software engineering!
+                    I recently read "Clean Code" by Robert C. Martin. It's a must-read for anyone inFields!
                 </p>
                 </p>
             </article>
@@ -61,17 +90,26 @@
                 <h2 class="comment-author">Selam Abebe</h2>
                 <p class="comment-date">January 3, 2023</p>
                 <p class="comment-text">
-                    Can anyone recommend a good online course on software engineering? I'm looking to enhance my skills.
+                    Can anyone recommend a good online course onFields? I'm looking to enhance my skills.
                 </p>
                 </p>
             </article>
-            
+
             <form>
                 <label for="new-comment">Enter your Message</label>
-                <textarea id="new-comment" name="new-comment" rows="4" placeholder="Type your message here..."></textarea>
+                <textarea id="new-comment" name="new-comment" rows="4"
+                    placeholder="Type your message here..."></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 AASTU| Developed By Software Savants&trade;</p>
+        </div>
+        </div>
+        </div>
+    </footer>
 </body>
+
 </html>
